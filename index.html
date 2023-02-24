@@ -9,7 +9,8 @@
 
         <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-        <link rel="stylesheet" href="assets/css/styles.min.css">
+        <link rel="preload" as="style" href="assets/css/styles.min.css" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="assets/css/styles.min.css"></noscript>
 
         <meta property="og:title" content="Leo Jweda">
         <meta property="og:type" content="website">
@@ -26,12 +27,16 @@
                 "name": "Leo Jweda",
                 "jobTitle": "Senior Software Developer",
                 "url": "https://leojweda.com"
-            }</script>
+        }</script>
+
+        <style>
+            html{box-sizing:border-box;font-size:12px;font-family:"Roboto",sans-serif}*,:after,:before{box-sizing:inherit}body,h1,h2,h3,h4,h5,h6,ol,p,ul{margin:0;padding:0;font-weight:400}ol,ul{list-style:none}img{max-width:100%;height:auto}@media (min-width:576px){html{font-size:14px}}@media (min-width:768px){html{font-size:16px}}@media (min-width:992px){html{font-size:18px}}@media (min-width:1200px){html{font-size:20px}}.avatar{height:256px;margin-left:auto;margin-right:auto;width:256px}.icons-social i{font-size:3em;padding:10px}main{display:flex;flex-direction:column;min-height:100vh;justify-content:center;padding:0 30px;text-align:center;background:#017b3d;color:#fff}main>.intro{font-family:"Reem Kufi",sans-serif;font-size:3.75em;font-weight:600}main>.tagline{font-size:1.5rem;margin:1.5rem 0;font-weight:100}.icons-social a{text-decoration:none;color:#fff}.icons-social a svg path{fill:#fff}
+        </style>
     </head>
 
     <body>
         <main>
-            <img class="avatar" src="assets/images/leo-jweda-circle.png" alt="Leo Jweda" />
+            <img class="avatar" src="assets/images/leo-jweda-circle.webp" alt="Leo Jweda" />
 
             <div class="intro">Hello, I'm Leo!</div>
 
